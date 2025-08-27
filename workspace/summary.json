@@ -1,0 +1,23 @@
+{
+  "group_by": "segment",
+  "groups": [
+    {
+      "segment": "Corporate",
+      "EAD": 827956225.77,
+      "ECL_12m": 15195930.525217665,
+      "ECL_lifetime": 26819236.3232895
+    },
+    {
+      "segment": "Retail",
+      "EAD": 801620729.27,
+      "ECL_12m": 15048298.379075307,
+      "ECL_lifetime": 26221951.767791796
+    },
+    {
+      "segment": "SME",
+      "EAD": 835859355.41,
+      "ECL_12m": 15900374.553070555,
+      "ECL_lifetime": 28079250.34052848
+    }
+  ]
+}

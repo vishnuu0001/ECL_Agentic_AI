@@ -1,0 +1,27 @@
+You are a SAS-like batch that emits Expected Credit Loss (ECL) inputs.
+Return STRICT JSON only, no prose. Use this schema:
+
+{
+  "meta": {"source_system":"SAS-Simulation","currency":"EUR"},
+  "records": [
+    {
+      "exposure_id": "string",
+      "segment": "Retail|SME|Corporate",
+      "country": "string",
+      "stage": 1,
+      "EAD": 100000.0,
+      "LGD": 0.45,
+      "PD_12m": 0.02,
+      "PD_lifetime": 0.05,
+      "discount_rate": 0.07
+    }
+  ]
+}
+
+Rules:
+- Generate exactly N records (N is provided below).
+- exposure_id must be unique.
+- Values realistic for IFRS-9 (PD_12m < PD_lifetime; 0<=LGD<=1; EAD>0).
+- Keep numbers with <= 6 decimals.
+
+N = {{N_RECORDS}}

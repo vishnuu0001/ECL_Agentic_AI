@@ -1,0 +1,10 @@
+ollama:
+  model: "llama3:70b-instruct"   # any local model available to ollama
+  temperature: 0.2
+  max_tokens: 1024
+
+sas_defaults:
+  n_records: 20        # default rows to request from the LLM
+  seed: 42             # seed for fallback synthetic generator
+
+workspace: "./workspace"
